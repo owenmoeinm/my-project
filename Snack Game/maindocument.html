@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylegame.css">
+</head>
+<body>
+    <div class="gameplay">
+        <div class="pointbar">
+            <span class="score">Score : 0</span>
+            <span class="high-score">High Score : </span>
+        </div>
+        <div class="place-snake-life"></div>
+        <div id="responsiveforphone">
+            <button id="click" class="left" onclick="controlsfromscreen('left')">⇠</button>
+            <button id="click" class="down" onclick="controlsfromscreen('down')">⇣</button>
+            <button id="click" class="up" onclick="controlsfromscreen('up')">⇡</button>
+            <button id="click" class="right" onclick="controlsfromscreen('right')">⇢</button>
+        </div>
+    </div>
+</body>
+<script src="rungame.js" defer></script>
+</html>

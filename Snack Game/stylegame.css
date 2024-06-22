@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gameplay{
+    width: 60vh;
+    height: 75vh;
+    min-width: 60vh;
+    background-color: rgb(7, 57, 139);
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+}
+.pointbar{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(43, 26, 103);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.place-snake-life{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(35 , 1fr) / repeat(30 , 1fr);
+}
+.place-snake-life .food{
+    background-color: red;
+}
+.place-snake-life .snake{
+    background-color: rgb(0, 248, 252);
+}
+#responsiveforphone{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #responsiveforphone{
+        display: flex;
+        width: 60vh;
+        height: 10vh;
+    }
+    #click{
+        flex-direction: row;
+        width: 25%;
+        border: none;
+        background-color: rgb(43, 26, 103);
+        justify-content: center;
+        align-items: center;
+    }
+    #click:hover{
+        background-color: rgb(12, 12, 67);
+        transition: 0.1s;
+    }
+    
+}
