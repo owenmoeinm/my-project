@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , 'Inter';
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #394cab;
+    color: white;
+}
+.roomgame{
+    max-width: 800px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a55a92;
+}
+.Game-events{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.place-answer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: ;
+}
+.place-answer .world{
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 3px solid #1f2d70;
+    margin: 10px;
+}
+.Relationship{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.chanse span{
+    color: black;
+}
+.keybord{
+    height: 40%;
+    width: 100%;
+    text-align: center;
+}
+.keybord button{
+    border-radius: 5px;
+    border: none;
+    background-color: #394cab;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    text-transform: uppercase;
+}
+.keybord button:hover{
+    background-color: #4c63d3;
+
+}
+.Game-status{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and(min-widht:600px) {
+    .roomgame{
+        display: flex;
+        flex-direction: column;
+    }
+}
