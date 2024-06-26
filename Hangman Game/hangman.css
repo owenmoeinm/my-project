@@ -11,12 +11,14 @@ body {
     align-items: center;
     justify-content: center;
     background: #394cab;
-    color: white;
+    color: black;
 }
 .roomgame{
     max-width: 800px;
     height: 70vh;
     display: flex;
+    color: white;
+    border-radius:8px;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
@@ -35,13 +37,19 @@ body {
     height: 30%;
     display: flex;
     flex-direction: row;
-    align-items: ;
+    align-items: center;
 }
-.place-answer .world{
+.place-answer .word{
     width: 100%;
     list-style-type: none;
     border-bottom: 3px solid #1f2d70;
     margin: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.place-answer .mark{
+    border-bottom: none;
+    margin-bottom: 5vh;
 }
 .Relationship{
     width: 100%;
@@ -54,7 +62,7 @@ body {
     text-align: center;
 }
 .chanse span{
-    color: black;
+    color: blue;
 }
 .keybord{
     height: 40%;
@@ -65,11 +73,12 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #394cab;
-    color: white;
     width: 40px;
+    color: white;
     height: 40px;
     margin: 2px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .keybord button:hover{
     background-color: #4c63d3;
@@ -77,14 +86,88 @@ body {
 }
 .Game-status{
     height: 80%;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-@media screen and(min-widht:600px) {
+.control{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.404);
+    color: white;
+}
+.Game-over{
+    background-color: blueviolet;
+    min-width: 500px;
+    min-height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.Great-game{
+    background-color: blueviolet;
+    min-width: 500px;
+    min-height: 450px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.reload-button{
+    border: none;
+    background-color: #978cfe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: lightcyan;
+}
+.reload-button:hover{
+    cursor: pointer;
+    background-color: #484185;
+    transition: 0.3s;
+}
+.control .images{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Result{
+    width: 100%;
+    background-color: #1f2d70;
+    padding: 3vh;
+    text-align: center;
+}
+.green{
+    color: rgb(97, 252, 97);
+}
+.reed{
+    color: red;
+}
+
+@media only screen and (max-width:650px){
     .roomgame{
-        display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100vh;
+        height: 100vh;
+    }
+    .Game-status{
+        margin-top: 50px;
+    }
+    .keybord{
+        margin: 20px;
+    }
+    .place-answer{
+        margin: 20px;
     }
 }

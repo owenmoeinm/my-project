@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hangman.css">
+    <script src="scripts/wordgame.js" defer></script>
+    <script src="scripts/hangman.js" defer></script>
 </head>
 <body>
     <div class="roomgame">
         <div class="Game-events">
             <ul class="place-answer">
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
-                <li class="world"></li>
+                <li class="word mark">A</li>
+                <li class="word"></li>
+                <li class="word"></li>
+                <li class="word"></li>
+                <li class="word"></li>
+                <li class="word"></li>
+                <li class="word"></li>
+                <li class="word"></li>
             </ul>
             <div class="Relationship">
-                <div class="question">hint: this place for quest in the game</div>
+                <div class="question"></div>
                 <div class="chanse">incorrect quesses :<span> 0.6</span></div>
             </div>
-            <div class="keybord">
-                <button>a</button><button>b</button><button>c</button><button>d</button><button>e</button><button>f</button><button>g</button><button>h</button><button>y</button><button>g</button><button>k</button><button>l</button><button>m</button><button>n</button><button>o</button><button>p</button><button>q</button><button>r</button><button>s</button><button>t</button><button>u</button><button>v</button><button>w</button><button>x</button><button>y</button><button>z</button>
-            </div>
+            <div class="keybord"></div>
         </div>
         <div class="Game-status"> 
                 <img src="images/hangman-0.svg">
                 <h1>hangman GAME</h1>
         </div>
-
+    </div>
+    <div class="control">
+        <div class="Game-over">
+            <div class="images"><img src="images/lost.gif"></div>
+            <h1 class="Result reed">GAME OVER</h1>
+            <button class="reload-button">RETERY</button>
+            <P>YOU LOSE : <span class="green">derdavil</span></P>
+        </div>
+        <div class="Great-game">
+            <div class="images"><img src="images/victory.gif"></div>
+            <h1 class="Result green">YOU WIN</h1>
+            <button class="reload-button">NEXT</button>
+            <P>You guessed it right: <span class="green">derdavil</span></P>
+        </div>
     </div>
 </body>
 </html>
